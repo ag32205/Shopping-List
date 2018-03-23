@@ -8,6 +8,6 @@ function AddItem() {
     var create = document.createElement('li');
     create.textContent = Newitem;
     ul.appendChild(create);
-
+    var deleteButton = document.getElementById
 }
 
