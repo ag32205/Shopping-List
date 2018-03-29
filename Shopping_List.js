@@ -9,7 +9,7 @@ function AddItem() {
     ul.appendChild(create);
     var button2 = document.createElement("button");
     var span = document.createElement("span")
-    create.appendChild(span);
+
     span.textContent = document.getElementById('item').value;
     create.appendChild(button2);
     button2.textContent = "Delete";
