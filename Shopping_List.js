@@ -7,20 +7,11 @@ function AddItem() {
     var create = document.createElement('li');
     create.textContent = Newitem;
     ul.appendChild(create);
-    var button = document.createElement("button");
-    button.textContent = "Delete";
-    ul.appendChild(button);
+    var button2 = document.createElement("button");
+    var span = document.createElement("span")
+    create.appendChild(span);
+    span.textContent = document.getElementById('item').value;
+    create.appendChild(button2);
+    button2.textContent = "Delete";
+
 }
-
-var button2 = document.getElementById("delete");
-button2.addEventListener("click", DeleteItem);
-
-function DeleteItem() {
-    var ul = document.getElementsByTagName('ul')[0];
-    var Newitem = document.getElementById('item').value;
-    var create = document.createElement('li');
-    create.textContent = Newitem;
-    ul.appendChild(create);
-    Newitem.remove();
-}
-
